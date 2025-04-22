@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dodgekart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #2e8b57;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+    form input[type="text"], form input[type="email"] {
+      padding: 10px;
+      width: 100%;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 10px 20px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .how-it-works {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+    .how-it-works img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .how-it-works-text {
+      background-color: #e8f5e9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .how-it-works-text p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dodgekart</h1>
+    <p>Groceries & Online Orders Delivered for Just $1 Per Mile</p>
+    <a href="#signup" class="cta-button">Sign Up for Delivery</a>
+    <a href="#drivers" class="cta-button">Drive With Us</a>
+  </header>
+
+  <div class="section">
+    <h2>How It Works</h2>
+    <div class="how-it-works">
+      <img src="https://images.unsplash.com/photo-1611601184021-00c1b5b77f1b?auto=format&fit=crop&w=800&q=80" alt="Grocery Delivery">
+      <div class="how-it-works-text">
+        <p><strong>1.</strong> Order from your favorite online or local store.</p>
+        <p><strong>2.</strong> Let us know where to pick it up and where to deliver.</p>
+        <p><strong>3.</strong> Pay $1 per mile and receive your delivery quickly and securely.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="drivers">
+    <h2>Drive With Us</h2>
+    <p>Join our mission to bring essential deliveries to rural communities.</p>
+    <p>Set your own hours and get paid per mile. Background check required (driver pays fee).</p>
+    <a href="#signup" class="cta-button">Apply to Drive</a>
+  </div>
+
+  <div class="section" id="signup">
+    <h2>Sign Up for Updates</h2>
+    <form action="https://example.com/form-handler" method="POST">
+      <label for="zipcode">ZIP Code:</label>
+      <input type="text" id="zipcode" name="zipcode" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Notify Me</button>
+    </form>
+    <p style="font-size: 0.9em;">We’ll only notify you when we launch in your area. No spam.</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Dodgekart | Contact: support@dodgekart.com</p>
+  </footer>
+
+</body>
+</html>
